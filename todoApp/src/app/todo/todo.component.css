@@ -1,0 +1,12 @@
+.heading{
+	padding: 5px;
+	text-align: center;
+}
+
+.hide-heading{
+	display: none !important;
+}
+
+.show-heading{
+	display: block;
+}

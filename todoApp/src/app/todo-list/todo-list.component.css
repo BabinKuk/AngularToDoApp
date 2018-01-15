@@ -1,0 +1,18 @@
+.list-of-todos{
+	padding: 20px;
+	width: 500px;
+  margin: auto;
+  font-size: 20px;
+}
+
+.todo:hover{
+	cursor: pointer;
+}
+
+.details {
+  display: none;
+}
+
+.active{
+  display: block;
+}

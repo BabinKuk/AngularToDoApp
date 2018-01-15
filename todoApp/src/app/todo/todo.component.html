@@ -1,0 +1,11 @@
+<div class="container">
+  <h2 class="heading">Highlight selected Row in Angular 2.</h2>
+  <div class="row">
+		<app-todo-list
+			[todoList]="todoListProvider" (onTodoSelected)="todoSelected($event)" >
+		</app-todo-list>
+	</div>
+	<h3 class="heading" [ngClass]="todoName == '' ? 'hide-heading' : 'show-heading'">
+		You selected {{ todoName }}
+	</h3>>
+</div>

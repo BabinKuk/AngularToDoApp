@@ -1,0 +1,14 @@
+<div class="list-of-todos">
+  <ul class="list-group">
+    <!-- click event to handle the selection -->
+    <!-- adding a class to indicate the selection -->
+    <li *ngFor="let todo of todoList" class="list-group-item todo"
+      (click)="selectedTodo(todo)"
+			[class.active]="isSelected(todo)">
+        {{ todo.name }}
+        <div class="details" [class.active]="isSelected(todo)">
+          {{ todo.date }}
+        </div>
+		</li>
+  </ul>
+</div>
